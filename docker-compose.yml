@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 networks:
   laravel:
@@ -80,7 +80,7 @@ services:
     depends_on:
       - php
     user: ${USER:-youruser}
-    entrypoint: ['composer', '--ignore-platform-reqs']
+    entrypoint: ['composer']
     networks:
       - laravel
 
@@ -111,7 +111,8 @@ services:
     depends_on:
       - mysql
     working_dir: /var/www/html
-    entrypoint: ['php', '/var/www/html/artisan']
+    user: ${USER:-youruser}
+    entrypoint: ['php', 'artisan']
     networks:
       - laravel
 
