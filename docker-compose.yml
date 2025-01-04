@@ -26,7 +26,7 @@ services:
       - laravel
 
   mysql:
-    image: mariadb:10.6.5
+    image: mariadb:10.6.16
     container_name: mysql
     restart: unless-stopped
     tty: true
@@ -85,7 +85,7 @@ services:
       - laravel
 
   npm:
-    image: node:16.13.0
+    image: node:23.5
     container_name: npm
     volumes:
       - ./:/var/www/html
