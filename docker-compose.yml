@@ -55,7 +55,7 @@ services:
       - laravel
 
   redis:
-    image: redis:latest
+    image: redis:7.2
     container_name: redis
     restart: unless-stopped
     ports:
