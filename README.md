@@ -6,13 +6,13 @@ This repository provides a boilerplate for setting up a Laravel project with Doc
 
 ### Dependency Versions  
 
-- **Composer**: `2.7`  
-- **APINE**: `3.20`  
-- **PHP**: `8.4`  
-- **MariaDB**: `10.6.5`  
-- **Redis**: `6.2.6`  
-- **Node.js**: `16.13.0`  
-- **Mailhog**: `1.0.1`
+- **Composer**: `2.6.5`  
+- **APINE**: `3.18`  
+- **PHP**: `8.2`  
+- **MariaDB**: `10.6`  
+- **Redis**: `7.2`  
+- **Node.js**: `18-apline`  
+- **Mailhog**: `latest`
 
 ### Clone this repo
 
