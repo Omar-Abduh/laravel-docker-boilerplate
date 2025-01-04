@@ -1,4 +1,4 @@
-FROM php:8.4-fpm-alpine3.20
+FROM php:8.2-fpm-alpine3.20
 
 ARG UID
 ARG GID
