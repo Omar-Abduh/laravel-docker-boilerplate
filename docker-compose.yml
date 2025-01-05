@@ -32,12 +32,28 @@ services:
     ports:
       - 3306:3306
     environment:
-      MYSQL_DATABASE: homestead
-      MYSQL_USER: homestead
-      MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: DevOps
+      MYSQL_USER: DevOps
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
+    networks:
+      - laravel
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    ports:
+      - 8080:80
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_DATABASE: DevOps
+      MYSQL_USER: DevOps
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    depends_on:
+      - mysql
     networks:
       - laravel
 
