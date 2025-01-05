@@ -45,7 +45,7 @@ services:
     image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin
     ports:
-      - 8080:80
+      - 8001:80
     environment:
       MYSQL_HOST: mysql
       MYSQL_DATABASE: DevOps
