@@ -47,16 +47,14 @@ services:
     ports:
       - 8001:80
     environment:
-      MYSQL_HOST: mysql
-      MYSQL_DATABASE: DevOps
-      MYSQL_USER: DevOps
-      MYSQL_PASSWORD: password
+      PMA_HOST: mysql
+      PMA_USER: DevOps
+      PMA_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
     depends_on:
       - mysql
     networks:
       - laravel
-
   php:
     build:
       context: ./dockerfiles
