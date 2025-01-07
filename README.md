@@ -1,6 +1,6 @@
-# Laravel Docker Boilerplate
+# Laravel Docker Templete
 
-## Generate New Laravel Project  
+## Generate New Laravel Project 
 
 This repository provides a boilerplate for setting up a Laravel project with Docker.  
 
@@ -20,11 +20,3 @@ This repository provides a boilerplate for setting up a Laravel project with Doc
 ```shell
 https://github.com/Omar-Abduh/laravel-docker-boilerplate.git
 ```
-
-###  Create laravel project
-
-```shell
-./bin/create-laravel-project.sh <project-name> <laravel-version>
-```
-
-
